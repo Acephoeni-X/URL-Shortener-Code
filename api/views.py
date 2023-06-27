@@ -3,6 +3,12 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 import pyshorteners
 
+# Request Type
+# {
+#     "url": "acetor.live",
+#     "method" : "TinyURL"
+#  }
+
 class shortner():
     def __init__(self):
         self.shortener = pyshorteners.Shortener()
